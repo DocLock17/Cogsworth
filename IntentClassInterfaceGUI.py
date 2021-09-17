@@ -9,7 +9,8 @@ def request_response(text):
     query = {'input':text}
     # query = {'input':randint(1000,9999)}
     # print(text)
-    response = requests.put('http://127.0.0.1:5000', params=query)
+    # response = requests.put('http://127.0.0.1:5000', params=query)
+    response = requests.put('http://35.188.177.166:5000', params=query)
     # print(count,"  ", response.json()['body'])
     return response.json()['body']
 
